@@ -1,7 +1,7 @@
 
 # Zero-Intelligence Supply Chain Simulation – Fragility Calibration
 
-This repository contains the full simulation and analysis code for the Zero-Intelligence (ZI) model used in the MSc thesis _"Timeliness Criticality in Supply Chains"_ by Merel de Leur (2025). The simulation framework was developed to isolate structural sources of systemic fragility in decentralized supply networks.
+This repository contains the full simulation and analysis code for the Zero-Intelligence (ZI) Supply-Chain model used in the MSc thesis _"Timeliness Criticality in Supply Chains"_ by Merel de Leur (2025). The simulation framework was developed to isolate structural sources of systemic fragility in decentralized supply networks.
 
 ---
 
