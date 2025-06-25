@@ -55,7 +55,7 @@ pip install numpy pandas matplotlib
 To run the full simulation and analysis pipeline:
 
 ```bash
-python run_simulations.py
+python Thesis ZI Model.py
 ```
 
 The script executes all parameter combinations and saves outputs into structured folders.  
