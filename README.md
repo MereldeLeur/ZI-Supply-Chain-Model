@@ -8,7 +8,7 @@ This repository contains the full simulation and analysis code for the Zero-Inte
 ## Features
 
 - Stylized circular supply chain simulation with zero-intelligence agents
-- Systematic variation of inventory, topology, and holding costs
+- Systematic variation of inventory, initial inventory distribution, number of agents in the ring, and holding costs
 - Temporal event logging and balance tracking for each agent
 - Extraction of inverse flow times, delays, and avalanches
 - Publication-quality plots for fragility diagnostics
@@ -63,9 +63,9 @@ You can modify parameters like:
 
 ```python
 first_layer_distributions = ["first_only"]
-inventory_costs = [0.5]
-agent_counts = [5]
-initial_inventories = [0.2, 0.4, 0.6, 0.8]
+inventory_costs = [0,05, 0.5, 1.0, 1,5]
+agent_counts = [4, 5, 6, 10, 20, 40]
+initial_inventories = [1, 2, 3, 4, 5, 10, 20]
 ```
 
 ---
@@ -129,7 +129,7 @@ If `num_agents == 5`, agent-specific plots (`.pdf`) are also created.
 
 ### 1. Inverse Flow Time
 - Measures time to collect 5 items (agent 1)
-- Rolling block size = 6 (5 events)
+- Rolling block size of 5 items
 - Saved to `Flux_Agent1.csv` (time) and `Flux_Agent1_ClickSpace.csv` (clicks)
 
 ### 2. Schedule Benchmark
@@ -159,7 +159,7 @@ If `num_agents == 5`, agent-specific plots (`.pdf`) are also created.
 
 ## Thesis Figures
 
-All generated plots are publication-ready and used in the MSc thesis:
+All generated plots are thesis-ready:
 
 - Inverse flow comparisons (raw + sorted)
 - Avalanche statistics vs inventory
@@ -170,7 +170,7 @@ All generated plots are publication-ready and used in the MSc thesis:
 
 ## Citation
 
-If you use this code, please cite:
+If you use this code (or parts of it), please cite:
 
 > de Leur, M. J. M. (2025). _Timeliness Criticality in Supply Chains_. MSc Finance Thesis. Vrije Universiteit Amsterdam.
 
